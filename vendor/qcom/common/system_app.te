@@ -4,3 +4,8 @@ userdebug_or_eng(`
   allow system_app diag_device:chr_file rw_file_perms;
 ')
 set_prop(system_app, vendor_bluetooth_prop)
+
+allow system_app fs_bpf:dir search;
+allow system_app proc_pagetypeinfo:file read;
+allow system_app sysfs_zram:dir search;
+allow system_app vendor_default_prop:file read;
