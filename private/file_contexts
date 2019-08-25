@@ -1,1 +1,4 @@
 /system/bin/preloads_copy\.sh   u:object_r:preloads_copy_exec:s0
+
+# Lineage hardware
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.sdm              u:object_r:hal_lineage_livedisplay_default_exec:s0
